@@ -29,13 +29,13 @@ Thimble requires a modern web browser, and we recommend using Mozilla Firefox or
 
 # Setup/Installation
 
-Thimble interacts with the Publish API (source managed in [publish.webmaker.org](https://github.com/mozilla/publish.webmaker.org)) to store users, projects, files and other content as well as publish user projects.
+Thimble interacts with the Publish API (source managed in [publish.webmaker.org](https://github.com/mozilla/publish.webmaker.org)) to store users, projects, files and other content as well as publishes user projects.
 
 For authentication and user management, Thimble uses Webmaker OAuth which consists of the Webmaker ID System (source managed in [id.webmaker.org](https://github.com/mozilla/id.webmaker.org)) and the Webmaker Login API (source managed in [login.webmaker.org](https://github.com/mozilla/login.webmaker.org)).
 
 All three services are bundled together using Git subtrees to be run together using Vagrant, or, they may be run separately with Thimble [manually](#manual-installation).
 
-**Note:** The Git subtree bundle mentioned above for use with the automated installation can be found in the `/services` folder. It contains a subtree for each of the three services. These subtrees are not automatically kept in sync with their corresponding service's parent repositories. If you need to update one of the subtrees to match the history of its parent repository, follow these instructions:
+**Note:** The Git subtree bundle mentioned above for use with the automated installation can be found in the `/services` folder. It contains a subtree for each of the three services. These subtrees are not automatically kept in sync with their corresponding service's parent repositories. If you need to update any one of the subtrees to match the history of its parent repository, follow these instructions:
   - Create a separate branch and checkout to it.
   - Run the following to get the history of the service's repository:
 
